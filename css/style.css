@@ -61,13 +61,14 @@ body {
 }
 
 .mynavbar {
-   background-color: rgba(255, 255, 255, 0.3) !important;
+   background-color: rgba(255, 255, 255, 0.4) !important;
    backdrop-filter: blur(4px);
 }
 
 .mynavbar .offcanvas {
    height: 100vh;
 }
+
 
 .mynavbar .navbar-brand,
 .mynavbar .offcanvas-title {
