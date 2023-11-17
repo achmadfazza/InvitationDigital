@@ -7,7 +7,7 @@
 body {
    font-size: 1.2rem;
    font-family: 'Work Sans', sans-serif;
-   min-height: 4000px;
+   min-height: 100vh;
    scroll-behavior: smooth;
 }
 
@@ -74,6 +74,14 @@ body {
 .mynavbar .nav-link {
    text-transform: uppercase;
    font-size: 1.5rem;
+   color: var(--bg);
+   font-weight: 400;
+}
+
+.mynavbar .nav-item img,
+.mynavbar .nav-item svg {
+   width: 1.2em;
+   height: 1.2em;
 }
 
 .home {
@@ -81,7 +89,7 @@ body {
    background-size: cover;
    min-height: 100vh;
    margin-top: -0.2rem;
-   padding-top: 8rem;
+   padding-top: 6rem;
    padding-bottom: 5rem;
 }
 
