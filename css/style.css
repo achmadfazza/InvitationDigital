@@ -1,6 +1,6 @@
 :root {
    --pink: #f14e95;
-   --bg: #0a0a0a;
+   --bg: #000000;
    --shadow: 0 2px 2px rgba(0 0 0 / 0.5);
 }
 
@@ -73,6 +73,7 @@ body {
 
 .mynavbar .nav-link {
    text-transform: uppercase;
+   font-size: 1.5rem;
 }
 
 .home {
@@ -157,7 +158,7 @@ body {
 /* tablet */
 @media (max-width: 768px) {
    html {
-      font-size: 75%;
+      font-size: 80%;
    }
 
    .simply-countdown>.simply-section {
@@ -170,14 +171,13 @@ body {
       text-align: center;
    }
 
-
-
 }
 
 /* mobile */
 @media (max-width: 576px) {
    html {
-      font-size: 65%;
+      font-size: 70%;
+      font-weight: 400;
    }
 
    .home .container {
@@ -187,6 +187,22 @@ body {
    .simply-countdown>.simply-section {
       padding: 40px;
       margin: 3px;
+   }
+
+   .home {
+      padding-top: 5rem;
+   }
+
+   .home p {
+      margin-top: 2rem;
+   }
+
+   .home h2 {
+      margin-top: 2rem;
+   }
+
+   .info .card {
+      margin-top: 1rem;
    }
 
 
