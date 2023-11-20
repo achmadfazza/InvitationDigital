@@ -29,7 +29,7 @@
    <section id="hero"
       class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white fixe">
       <main>
-         <h4>Kepada Bapak/Ibu/Saudara/i, </h4>
+         <h4>Kepada <span>Bapak/Ibu/Saudara/i, </span></h4>
          <h1>Gujati Group</h1>
          <p class="mt-4">akan melangsungkan acara <b>Early Meeting</b> dalam :</p>
          <div class="simply-countdown mx-auto"></div>
@@ -130,20 +130,20 @@
                   </div>
                </div>
             </div>
-            <div class="col-md-5 col-10 pb-4">
+            <div class="col-md-5 col-10">
                <div class="card text-center bg-white">
                   <div class="card-header">
                      Informasi Peserta
                   </div>
                   <div class="card-body">
-                     <div class="row justify-content-center pb-3">
-                        <div class="col-md-6 mt-2">
+                     <div class="row justify-content-center">
+                        <div class="col-md-10 mt-2 myInfoName">
                            <i class="bi bi-person-check d-block"></i>
-                           <span>Nama Peserta</span>
+                           <p><span></span></p>
                         </div>
-                        <div class="col-md-6 mt-2">
+                        <div class="col-md-2 mt-2 myInfoSeat">
                            <i class="bi bi-card-checklist d-block"></i>
-                           <span>Kursi Peserta</span>
+                           <p><span></span></p>
                         </div>
                      </div>
                   </div>
@@ -153,7 +153,7 @@
                </div>
             </div>
          </div>
-         <div class="row uniform-model justify-content-center">
+         <div class="row justify-content-center mt-4">
             <div class="col-md-5 col-10">
                <div class="card">
                   <img src="./img/Uniform_Models.jpg" class="card-img-top" alt="Models Uniform">
@@ -172,6 +172,7 @@
          <div class="row justify-content-center">
             <div class="col-md-8 col-10 text-center">
                <h2>Konfirmasi Kehadiran</h2>
+               <p>Isi form di bawah ini untuk melakukan konfirmasi kehadiran.</p>
             </div>
          </div>
       </div>
@@ -206,6 +207,27 @@
          },
          refresh: 1000, //default refresh every 1s
       });
+   </script>
+
+   <!-- URL Params -->
+   <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const name = urlParams.get('n') || 'Nama Peserta';
+      const seat = urlParams.get('s') || 'Nomor Kursi';
+
+      // pronoun
+      const pronoun = urlParams.get('p') || 'Bapak/Ibu/Saudara/i';
+
+      // merubah url ke dalam html
+      // hero section
+      const changeName = document.querySelector('.hero h4 span');
+      changeName.innerText = `${pronoun} ${name},`.replace(/,$/, ',');
+
+      // info section
+      const changeInfoName = document.querySelector('.myInfoName p span');
+      changeInfoName.innerText = `${name}`;
+      const changeInfoSeat = document.querySelector('.myInfoSeat p span');
+      changeInfoSeat.innerText = `${seat}`;
    </script>
 </body>
 
