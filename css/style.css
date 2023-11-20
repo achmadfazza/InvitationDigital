@@ -150,6 +150,11 @@ body {
    font-weight: 300;
 }
 
+.card img {
+   width: 100%;
+   border-radius: 1rem;
+}
+
 /* Media Query */
 
 /* laptop */
@@ -212,6 +217,5 @@ body {
    .info .card {
       margin-top: 1rem;
    }
-
 
 }
