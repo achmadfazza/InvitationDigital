@@ -136,7 +136,7 @@
                      Informasi Peserta
                   </div>
                   <div class="card-body">
-                     <div class="row justify-content-center">
+                     <div class="row justify-content-start">
                         <div class="col-md-9 mt-2 myInfoName">
                            <i class="bi bi-person-check d-block"></i>
                            <p><span></span></p>
@@ -212,11 +212,11 @@
    <!-- URL Params -->
    <script>
       const urlParams = new URLSearchParams(window.location.search);
-      const name = urlParams.get('n') || ' ';
-      const seat = urlParams.get('s') || ' ';
+      const name = urlParams.get('n') || 'Nama';
+      const seat = urlParams.get('s') || 'No';
 
       // pronoun
-      const pronoun = urlParams.get('p') || ' ';
+      const pronoun = urlParams.get('p') || 'Bapak/Ibu/Saudara/i ';
 
       // merubah url ke dalam html
       // hero section
