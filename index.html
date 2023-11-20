@@ -137,11 +137,11 @@
                   </div>
                   <div class="card-body">
                      <div class="row justify-content-center">
-                        <div class="col-md-10 mt-2 myInfoName">
+                        <div class="col-md-9 mt-2 myInfoName">
                            <i class="bi bi-person-check d-block"></i>
                            <p><span></span></p>
                         </div>
-                        <div class="col-md-2 mt-2 myInfoSeat">
+                        <div class="col-md-3 mt-2 myInfoSeat">
                            <i class="bi bi-card-checklist d-block"></i>
                            <p><span></span></p>
                         </div>
@@ -156,10 +156,10 @@
          <div class="row justify-content-center mt-4">
             <div class="col-md-5 col-10">
                <div class="card">
-                  <img src="./img/Uniform_Models.jpg" class="card-img-top" alt="Models Uniform">
-               </div>
-               <div class="card-body text-center">
-                  <p class="card-text">Diharapkan menggunakan seragam sesuai dengan ketentuan.</p>
+                  <img src="./img/Uniform_Models.jpg" class="card-img-top rounded" alt="Models Uniforms">
+                  <div class="card-body text-center">
+                     <p class="card-text">Diharapkan menggunakan seragam sesuai dengan ketentuan yang berlaku.</p>
+                  </div>
                </div>
             </div>
          </div>
@@ -212,11 +212,11 @@
    <!-- URL Params -->
    <script>
       const urlParams = new URLSearchParams(window.location.search);
-      const name = urlParams.get('n') || 'Nama Peserta';
-      const seat = urlParams.get('s') || 'Nomor Kursi';
+      const name = urlParams.get('n') || ' ';
+      const seat = urlParams.get('s') || ' ';
 
       // pronoun
-      const pronoun = urlParams.get('p') || 'Bapak/Ibu/Saudara/i';
+      const pronoun = urlParams.get('p') || ' ';
 
       // merubah url ke dalam html
       // hero section
