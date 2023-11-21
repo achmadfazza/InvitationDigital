@@ -12,7 +12,6 @@ body {
    font-size: 1.2rem;
    font-family: 'Work Sans', sans-serif;
    min-height: 4500px;
-   scroll-behavior: smooth;
 }
 
 .hero::before {
@@ -153,8 +152,30 @@ body {
    font-weight: 300;
 }
 
-/* Media Query */
+.rsvp {
+   background-color: wheat;
+   background-size: cover;
+   min-height: 100vh;
+   padding-top: 5rem;
+   padding-bottom: 5rem;
+}
 
+.rsvp h2 {
+   font-family: 'Sacramento', cursive;
+   font-size: 5rem;
+   font-weight: bold;
+   color: var(--bg);
+   padding-bottom: 1rem;
+}
+
+.rsvp p {
+   font-family: 'Work Sans', sans-serif;
+   font-weight: 400;
+   font-size: 1rem;
+}
+
+
+/* Media Query */
 /* laptop */
 @media (max-width: 992px) {
    html {
@@ -169,7 +190,7 @@ body {
 /* tablet */
 @media (max-width: 768px) {
    html {
-      font-size: 80%;
+      font-size: 70%;
    }
 
    .simply-countdown>.simply-section {
@@ -187,7 +208,7 @@ body {
 /* mobile */
 @media (max-width: 576px) {
    html {
-      font-size: 70%;
+      font-size: 60%;
       font-weight: 400;
    }
 
@@ -214,6 +235,10 @@ body {
 
    .info .card {
       margin-top: 1rem;
+   }
+
+   .rsvp h2 {
+      font-size: 4rem;
    }
 
 }
