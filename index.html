@@ -185,14 +185,14 @@
                   <div class="mb-3">
                      <label for="status" class="form-label">Konfirmasi</label>
                      <select name="status" id="status" class="form-select">
-                        <option selected>Pilih salah satu</option>
+                        <option selected>-- Pilih salah satu --</option>
                         <option value="Hadir">Hadir</option>
                         <option value="Tidak Hadir">Tidak Hadir</option>
                      </select>
                   </div>
                </div>
                <div class="col-12" style="margin-top: 35px;">
-                  <button class="btn btn-primary">Kirim</button>
+                  <button class="btn btn-primary btn-sm">Kirim</button>
                </div>
             </form>
          </div>
@@ -269,9 +269,11 @@
       function enableScroll() {
          window.onscroll = function () { };
          rootElement.style.scrollBehavior = 'smooth';
+         // add to local storage
          localStorage.setItem('opened', 'true');
       }
 
+      //jika belum dibuka maka tidak bisa discroll
       if (!localStorage.getItem('opened')) {
          disableScroll();
       }
