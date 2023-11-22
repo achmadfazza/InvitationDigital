@@ -4,18 +4,18 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Form Test Coba</title>
+   <title>Form Testing Swall</title>
 </head>
 
 <body>
    <form action="<my-app-script-endpoint>" method="post" id="my-form">
       <label>Test Form Input Swall: <input type="text" name="Example Header" required /></label>
-      <input type="submit" value="Submit" />
+      <input type="submit" value="Submit" id="submitBtn" />
    </form>
 </body>
 
+<!-- cdn swal -->
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
 
 <script>
    window.addEventListener("load", function () {
@@ -30,20 +30,20 @@
          })
             .then(() => {
                swal({
-
                   title: "Berhasil!",
-
                   text: "Ditunggu kedatanganya di Early Meeting 2024",
-
                   icon: "success",
-
                   button: true
-
                });
+               // disable after submit button
+               const submitBtn = document.querySelector('#submitBtn');
+               submitBtn.disabled = true;
+               // reset input
+               form.reset();
+               return false;
             });
       });
    });
-
 </script>
 
 </html>
