@@ -189,7 +189,32 @@ body {
    border: 1px solid var(--navy);
 }
 
+footer {
+   padding: 2rem;
+   background-color: var(--blue);
+   color: white;
+}
 
+footer small span {
+   color: red;
+}
+
+footer a {
+   color: var(--bg);
+   font-weight: bold;
+   text-decoration: none;
+}
+
+footer a:hover {
+   color: white;
+}
+
+footer li {
+   list-style: none;
+   display: inline;
+   padding: 0.2rem;
+
+}
 
 /* Media Query */
 /* laptop */
