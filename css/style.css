@@ -11,7 +11,7 @@
 body {
    font-size: 1.2rem;
    font-family: 'Work Sans', sans-serif;
-   min-height: 4500px;
+   min-height: 100vh;
 }
 
 .hero::before {
@@ -193,6 +193,8 @@ footer {
    padding: 2rem;
    background-color: var(--blue);
    color: white;
+   height: auto;
+
 }
 
 footer small span {
@@ -212,7 +214,7 @@ footer a:hover {
 footer li {
    list-style: none;
    display: inline;
-   padding: 0.2rem;
+   padding: 1rem;
 
 }
 
@@ -282,4 +284,7 @@ footer li {
       font-size: 4rem;
    }
 
+   footer ul {
+      padding-bottom: 3rem;
+   }
 }
