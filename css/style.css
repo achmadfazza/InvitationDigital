@@ -118,6 +118,7 @@ body {
    color: white;
    padding-top: 5rem;
    padding-bottom: 8rem;
+   overflow: hidden;
 }
 
 .info h2 {
@@ -223,6 +224,34 @@ footer li {
    padding: 1rem;
 }
 
+.audio-icon-wrapper {
+   width: 4rem;
+   height: 4rem;
+   font-size: 4rem;
+   position: fixed;
+   bottom: 2rem;
+   right: 2rem;
+   cursor: pointer;
+   color: white;
+   opacity: 0.5;
+   mix-blend-mode: difference;
+   animation: rotating 4s linear infinite;
+   line-height: 0;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+}
+
+@keyframes rotating {
+   from {
+      transform: rotate(0);
+   }
+
+   to {
+      transform: rotate(360deg);
+   }
+}
+
 /* Media Query */
 /* laptop */
 @media (max-width: 992px) {
@@ -299,11 +328,10 @@ footer li {
    }
 
    footer ul {
-      padding-bottom: 3.2rem;
+      padding-bottom: 3.5rem;
    }
 
    .audio-icon-wrapper {
-      bottom: 6rem;
+      bottom: 12rem;
    }
-
 }
