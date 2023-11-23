@@ -72,13 +72,13 @@
          <div class="row justify-content-center">
             <div class="col-md-8 text-center">
                <h1>Early Meeting 2024</h1>
-               <h2>"Growing Fast by Doing Great"</h2>
+               <h2>"Synergize together to achieve digital transformation : innovation,efficiency and productivity"</h2>
                <p>Oleh karena itu, dengan segala hormat, kami bermaksud mengundang Bapak/Ibu,Saudara/i, untuk hadir pada
                   acara early meeting 2024 yang akan berlangsung pada : </p>
             </div>
          </div>
          <div class="row text-center mt-3">
-            <h3>Tanggal 13 November 2023, 07.00 s/d Selesai</h3>
+            <h3>Sabtu, 06 Januari 2024, 07:00 s/d 13:00 </h3>
             <p>berlokasi di :</p>
             <h3>Swiss-Belinn Saripetojo Solo</h3>
          </div>
@@ -116,16 +116,16 @@
                      <div class="row justify-content-center">
                         <div class="col-md-6">
                            <i class="bi bi-clock d-block"></i>
-                           <span>07.00 - 13.00</span>
+                           <span>07:00 WIB - 13:00 WIB </span>
                         </div>
                         <div class="col-md-6">
                            <i class="bi bi-calendar-check d-block"></i>
-                           <span>Sabtu, 30 Desember 2023</span>
+                           <span>Sabtu, 06 Januari 2024</span>
                         </div>
 
                      </div>
                   </div>
-                  <div class="card-footer">
+                  <div class="card-footer mt-3">
                      Diharapkan saat acara untuk kondusif dan tertib mengikuti rangkaian acara
                   </div>
                </div>
@@ -136,12 +136,12 @@
                      Informasi Peserta
                   </div>
                   <div class="card-body">
-                     <div class="row justify-content-start">
-                        <div class="col-md-9 mt-2 myInfoName">
+                     <div class="row justify-content-center">
+                        <div class="col-md-8 myInfoName">
                            <i class="bi bi-person-check d-block"></i>
                            <p><span></span></p>
                         </div>
-                        <div class="col-md-3 mt-2 myInfoSeat">
+                        <div class="col-md-4 myInfoSeat">
                            <i class="bi bi-card-checklist d-block"></i>
                            <p><span></span></p>
                         </div>
@@ -186,19 +186,19 @@
                      <label for="status" class="form-label">Konfirmasi</label>
                      <select name="status" id="status" class="form-select">
                         <option selected>-- Pilih salah satu --</option>
-                        <option value="Hadir">Hadir</option>
+                        <option value="Hadir">Hadir</option>l
                         <option value="Tidak Hadir">Tidak Hadir</option>
                      </select>
                   </div>
                </div>
-               <div class="col-12" style="margin-top: 35px;">
-                  <button class="btn btn-primary btn-sm">Kirim</button>
+               <div class="col-12">
+                  <button id="submitBtn" class="btn btn-primary btn-sm">Kirim</button>
                </div>
             </form>
 
             <div class="row justify-content-center mt-3">
                <div class="col-md-6">
-                  Halo
+
                </div>
             </div>
          </div>
@@ -211,19 +211,24 @@
          <div class="row">
             <div class="col text-center">
                <small class="block">&copy; 2024 Early Meeting Gujati Group.</small>
-               <small class="block">Made with <span>&#9829;</span> by IT Team</a>.</small>
+               <small class="block">Code with <span>&#9829;</span> by IT Team</a>.</small>
 
                <ul class="mt-2">
-                  <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-                  <li><a href="#"><i class="bi bi-youtube"></i></a></li>
-                  <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-                  <li><a href="#"><i class="bi bi-tiktok"></i></a></li>
+                  <li><a href="https://www.instagram.com/jamugujati59/?hl=en" target="_blank"><i
+                           class="bi bi-instagram"></i></a></li>
+                  <li><a href="https://www.youtube.com/@gujatigroupofficial4374" target="_blank"><i
+                           class="bi bi-youtube"></i></a></li>
+                  <li><a href="https://shopee.co.id/mazzoniofficialshop" target="_blank"><i
+                           class="bi bi-shop-window"></i></a></li>
+                  <li><a href="https://www.tiktok.com/@bumbu_mazzoni" target="_blank"><i class="bi bi-tiktok"></i></a>
+                  </li>
                </ul>
             </div>
          </div>
       </div>
    </footer>
-
+   <!-- cdn swal -->
+   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
       crossorigin="anonymous"></script>
@@ -301,6 +306,39 @@
       if (!localStorage.getItem('opened')) {
          disableScroll();
       }
+   </script>
+   <!-- Btn Logic -->
+   <script>
+      function disableButton() {
+         const submitBtn = document.querySelector('#submitBtn');
+         submitBtn.disabled = true;
+      }
+
+      window.addEventListener("load", function () {
+         const form = document.getElementById('my-form');
+         form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            const data = new FormData(form);
+            const action = e.target.action;
+            fetch(action, {
+               method: 'POST',
+               body: data,
+            })
+               .then(() => {
+                  swal({
+                     title: "Berhasil!",
+                     text: "Ditunggu kedatanganya di Early Meeting 2024",
+                     icon: "success",
+                     button: true
+                  });
+                  // disable after submit button
+                  disableButton();
+                  // reset input
+                  form.reset();
+                  return false;
+               });
+         });
+      });
    </script>
 </body>
 
