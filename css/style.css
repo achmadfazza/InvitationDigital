@@ -83,8 +83,8 @@ body {
 
 .mynavbar .nav-item img,
 .mynavbar .nav-item svg {
-   width: 1.2em;
-   height: 1.2em;
+   width: 2.5rem;
+   height: 2.5rem;
 }
 
 .home {
@@ -196,6 +196,16 @@ body {
    background-color: var(--navy);
    color: white;
    border: 1px solid var(--navy);
+}
+
+.rsvp a {
+   text-decoration: none;
+   font-size: 2rem;
+   font-weight: 600;
+   letter-spacing: 1px;
+   color: var(--pink);
+   text-transform: uppercase;
+   display: none;
 }
 
 footer {
