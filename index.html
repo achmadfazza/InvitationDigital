@@ -223,14 +223,15 @@
       </div>
 
    </footer>
-
+   <!-- audio player -->
    <div id="audio-container">
-      <audio src="audio/save-and-sound.mp3" type="audio/mp3"></audio>
+      <audio id="backsong" autoplay loop src="audio/save-and-sound.mp3" type="audio/mp3"></audio>
 
-      <div class="audio-icon-wrapper">
-         <i class="bi bi-disc"></i>
+      <div class="audio-icon-wrapper" style="display: none;">
+         <i class="bi bi-play-circle"></i>
       </div>
    </div>
+   <!-- audio player -->
 
    <!-- cdn swal -->
    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
@@ -241,7 +242,7 @@
       integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
       crossorigin="anonymous"></script>
    <script src="script/simplyCountdown.min.js"></script>
-   <!-- Timer -->
+   <!-- Timer CountDown -->
    <script>
       simplyCountdown('.simply-countdown', {
          year: 2024, // required
@@ -284,18 +285,16 @@
       const changeInfoSeat = document.querySelector('.myInfoSeat p span');
       changeInfoSeat.innerText = `${seat}`;
    </script>
-   <!-- Disable Scroll -->
+   <!-- Disable Scroll & Play Audio -->
    <script>
       const rootElement = document.querySelector(':root');
 
       function disableScroll() {
          const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
          const scrolTop = window.pageXOffset || document.documentElement.scrollLeft;
-
          window.onscroll = function () {
             window.scrollTo(scrollTop, scrollTop);
          };
-
          //  memaksa agar tidak bisa scroll ke bawah dengan root element;
          rootElement.style.scrollBehavior = 'auto';
       }

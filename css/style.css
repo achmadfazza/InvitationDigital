@@ -209,7 +209,7 @@ body {
 
 #myDiv {
    animation: 1s fadeIn;
-   animation-fill-mode: forwards;
+   animation-duration: 2s;
 }
 
 .hidden-div {
