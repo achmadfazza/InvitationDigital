@@ -51,6 +51,7 @@
          </li>
          <li class="nav-item">
             <a href="#info" class="nav-link"><img src="./img/info.svg" alt="info"></a>
+
          </li>
          <li class="nav-item">
             <a href="#rsvp" class="nav-link"><img src="./img/rsvp.svg" alt="rsvp"></a>
@@ -190,7 +191,7 @@
             </form>
 
             <!-- link absen remove display to show -->
-            <div class="row justify-content-center mt-3" data-aos="fade-right">
+            <div id="myDiv" class="row justify-content-center mt-3 hidden-div" data-aos="fade-right">
                <div class="col-md-6 text-center">
                   <a href="https://docs.google.com/forms/d/e/1FAIpQLSev8sY5wFW8vzQrGhjdOB2nGKAQHq78RMlc2SU6yac3OkwTlA/viewform"
                      target="_blank">link presensi</a>
@@ -247,7 +248,7 @@
          month: 1, // required
          day: 6, // required
          hours: 7, // Default is 0 [0-23] integer
-         minutes: 0, // Default is 0 [0-59] integer
+         minutes: 30, // Default is 0 [0-59] integer
          seconds: 0, // Default is 0 [0-59] integer
          words: { //words displayed into the countdown
             days: { singular: 'hari', plural: 'hari' },
@@ -257,7 +258,7 @@
          },
          plural: true, //use plurals
          onEnd: function () {
-            // your code
+            document.getElementById('myDiv').classList.remove("hidden-div");
             return;
          },
          refresh: 1000, //default refresh every 1s

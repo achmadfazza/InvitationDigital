@@ -205,6 +205,14 @@ body {
    letter-spacing: 1px;
    color: var(--pink);
    text-transform: uppercase;
+}
+
+#myDiv {
+   animation: 1s fadeIn;
+   animation-fill-mode: forwards;
+}
+
+.hidden-div {
    display: none;
 }
 
