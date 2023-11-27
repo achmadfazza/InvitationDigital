@@ -121,7 +121,7 @@ body {
    background-size: cover;
    min-height: 100vh;
    padding-top: 6rem;
-   padding-bottom: 5rem;
+   padding-bottom: 7rem;
 }
 
 .home h2 {
@@ -351,7 +351,7 @@ footer li {
    }
 
    .home {
-      padding-top: 5rem;
+      padding: 0;
    }
 
    .home p {
