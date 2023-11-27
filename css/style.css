@@ -8,6 +8,23 @@
    --wedding: #FFF0CE;
 }
 
+/* fonts */
+@font-face {
+   font-family: Caruban;
+   src: url(./fonts/Caruban-EBK8.ttf) format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: JavaCali;
+   src: url(./fonts/JavaCalligraphy-w1Pw6.ttf) format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+/* fonts */
+
 body {
    font-size: 1.2rem;
    font-family: 'Work Sans', sans-serif;
@@ -40,8 +57,20 @@ body {
 }
 
 .hero h1 {
-   font-family: 'Sacramento', cursive;
-   font-size: 6rem;
+   font-family: 'JavaCali', cursive;
+   font-size: 4.5rem;
+}
+
+.hero p b {
+   font-family: 'JavaCali', cursive;
+   letter-spacing: 3px;
+}
+
+.hero a {
+   font-family: 'JavaCali', cursive;
+   text-transform: lowercase;
+   font-size: 1rem;
+   letter-spacing: 2px;
 }
 
 .hero h4 {
@@ -314,6 +343,10 @@ footer li {
    .simply-countdown>.simply-section {
       padding: 40px;
       margin: 3px;
+   }
+
+   .hero h1 {
+      font-size: 3rem;
    }
 
    .home {
