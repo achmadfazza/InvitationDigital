@@ -119,8 +119,9 @@ body {
 .home {
    background-image: url('../img/bg-leaves.png');
    background-size: cover;
-   padding-top: 6rem;
-   padding-bottom: 7rem;
+   padding-top: 8rem;
+   padding-bottom: 8rem;
+   min-height: 100vh;
 }
 
 .home h2 {
@@ -336,8 +337,8 @@ footer li {
       font-weight: 400;
    }
 
-   .home .container {
-      padding-top: 15rem;
+   .home {
+      margin-top: 5rem;
    }
 
    .simply-countdown>.simply-section {
