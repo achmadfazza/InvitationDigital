@@ -263,10 +263,10 @@
    </footer>
    <!-- audio player -->
    <div id="audio-container">
-      <audio id="backsong" autoplay loop src="audio/save-and-sound.mp3" type="audio/mp3"></audio>
+      <audio id="song" autoplay loop src="audio/save-and-sound.mp3" type="audio/mp3"></audio>
 
-      <div class="audio-icon-wrapper" style="display: none;">
-         <i class="bi bi-disc"></i>
+      <div class="audio-icon-wrapper">
+         <i class=" bi bi-play-circle"></i>
       </div>
    </div>
    <!-- audio player -->
@@ -329,6 +329,12 @@
    <!-- Disable Scroll & Play Audio -->
    <script>
       const rootElement = document.querySelector(':root');
+      // audio
+      const audioIconWrapper = document.querySelector('.audio-icon-wrapper');
+      const audioIcon = document.querySelector('.audio-icon-wrapper i');
+      const song = document.querySelector('#song');
+      let isPlaying = false;
+
 
       function disableScroll() {
          const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -340,17 +346,40 @@
          rootElement.style.scrollBehavior = 'auto';
       }
 
+      audioIconWrapper.onclick = function () {
+         if (isPlaying) {
+            song.pause();
+            audioIcon.classList.remove('bi-play-circle');
+            audioIcon.classList.add('bi-pause-circle');
+         } else {
+            song.play();
+            audioIcon.classList.add('bi-play-circle');
+            audioIcon.classList.remove('bi-pause-circle');
+         }
+
+         isPlaying = !isPlaying;
+      };
+
+      function playAudio() {
+         song.volume = 0.1;
+         audioIconWrapper.style.display = 'flex';
+         song.play();
+         isPlaying = true;
+      }
+
       function enableScroll() {
          window.onscroll = function () { };
          rootElement.style.scrollBehavior = 'smooth';
          // add to local storage
          localStorage.setItem('opened', 'true');
+         playAudio();
       }
 
       //jika belum dibuka maka tidak bisa discroll
       if (!localStorage.getItem('opened')) {
          disableScroll();
       }
+
    </script>
    <!-- Btn Logic -->
    <script>

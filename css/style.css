@@ -276,7 +276,7 @@ footer li {
    height: 4rem;
    font-size: 4rem;
    position: fixed;
-   bottom: 2rem;
+   bottom: 6.8rem;
    right: 2rem;
    cursor: pointer;
    color: white;
@@ -286,7 +286,7 @@ footer li {
    line-height: 0;
    justify-content: center;
    align-items: center;
-   display: flex;
+   display: none;
 }
 
 @keyframes rotating {
@@ -325,6 +325,10 @@ footer li {
    .mynavbar .nav-link {
       font-size: 2rem;
       text-align: center;
+   }
+
+   .audio-icon-wrapper {
+      bottom: 7rem;
    }
 
 
