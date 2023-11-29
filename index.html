@@ -184,7 +184,8 @@
                <h2>Konfirmasi Kehadiran</h2>
                <p>Isi form di bawah ini untuk melakukan konfirmasi kehadiran.</p>
             </div>
-            <form id="my-form" class="row row-cols-md-auto g-3 align-items-center justify-content-center" method="POST">
+            <form id="my-form" class="row row-cols-md-auto g-3 align-items-center justify-content-center my-form"
+               method="POST">
                <div class="col-12">
                   <div class="mb-3">
                      <label for="name" class="form-label">Nama</label>
@@ -286,8 +287,8 @@
          year: 2023, // required
          month: 11, // required
          day: 29, // required
-         hours: 9, // Default is 0 [0-23] integer
-         minutes: 46, // Default is 0 [0-59] integer
+         hours: 10, // Default is 0 [0-23] integer
+         minutes: 59, // Default is 0 [0-59] integer
          seconds: 0, // Default is 0 [0-59] integer
          words: { //words displayed into the countdown
             days: { singular: 'hari', plural: 'hari' },
