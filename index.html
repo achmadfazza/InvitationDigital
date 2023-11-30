@@ -70,7 +70,7 @@
 
          </li>
          <li class="nav-item">
-            <a href="#rsvp" class="nav-link"><img src="./img/rsvp.svg" alt="rsvp"></a>
+            <a href="#rsvp" class="nav-link"><img src="./img/gallery-svg.svg" alt="galery"></a>
          </li>
       </ul>
 
@@ -181,8 +181,61 @@
       <div class="container">
          <div class="row justify-content-center">
             <div class="col-md-8 col-10 text-center">
-               <h2>Konfirmasi Kehadiran</h2>
-               <p>Isi form di bawah ini untuk melakukan konfirmasi kehadiran.</p>
+               <h2>Galeri Foto Early Meeting</h2>
+               <p>Koleksi foto Early Meeting Gujati Group</p>
+            </div>
+         </div>
+
+         <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
+            <div class="col mt-3">
+               <a href="img/gallery/1.png" data-toggle="lightbox" data-caption="Sandhika & Nofa 1"
+                  data-gallery="mygallery">
+                  <img src="img/gallery/thumbnail/1.png" alt="Sandhika & Nofa 1" class="img-fluid w-100 rounded">
+               </a>
+            </div>
+            <div class="col mt-3">
+               <a href="https://picsum.photos/id/300/1200/768" data-toggle="lightbox" data-caption="Sandhika & Nofa 2"
+                  data-gallery="mygallery">
+                  <img src="https://picsum.photos/id/300/300/400" alt="Sandhika & Nofa 2"
+                     class="img-fluid w-100 rounded">
+               </a>
+            </div>
+            <div class="col mt-3">
+               <a href="https://picsum.photos/id/301/1200/768" data-toggle="lightbox" data-caption="Sandhika & Nofa 3"
+                  data-gallery="mygallery">
+                  <img src="https://picsum.photos/id/301/300/400" alt="Sandhika & Nofa 3"
+                     class="img-fluid w-100 rounded">
+               </a>
+            </div>
+            <div class="col mt-3">
+               <a href="https://picsum.photos/id/302/1200/768" data-toggle="lightbox" data-caption="Sandhika & Nofa 4"
+                  data-gallery="mygallery">
+                  <img src="https://picsum.photos/id/302/300/400" alt="Sandhika & Nofa 4"
+                     class="img-fluid w-100 rounded">
+               </a>
+            </div>
+            <div class="col mt-3">
+               <a href="https://picsum.photos/id/304/1200/768" data-toggle="lightbox" data-caption="Sandhika & Nofa 5"
+                  data-gallery="mygallery">
+                  <img src="https://picsum.photos/id/304/300/400" alt="Sandhika & Nofa 5"
+                     class="img-fluid w-100 rounded">
+               </a>
+            </div>
+            <div class="col mt-3">
+               <a href="https://picsum.photos/id/305/1200/768" data-toggle="lightbox" data-caption="Sandhika & Nofa 6"
+                  data-gallery="mygallery">
+                  <img src="https://picsum.photos/id/305/300/400" alt="Sandhika & Nofa 6"
+                     class="img-fluid w-100 rounded">
+               </a>
+            </div>
+         </div>
+      </div>
+
+      <div class="container mt-5">
+         <div id="myDiv" class="row justify-content-center hidden-div">
+            <div class="col-md-8 col-10 text-center">
+               <h2>Form Absensi</h2>
+               <p>Klik tombol kirim melakukan konfirmasi kehadiran</p>
             </div>
             <form id="my-form" class="row row-cols-md-auto g-3 align-items-center justify-content-center my-form"
                method="POST">
@@ -194,12 +247,8 @@
                </div>
                <div class="col-12">
                   <div class="mb-3">
-                     <label for="status" class="form-label">Konfirmasi</label>
-                     <select name="status" id="status" class="form-select">
-                        <option selected>-- Pilih salah satu --</option>
-                        <option value="Hadir">Hadir</option>l
-                        <option value="Tidak Hadir">Tidak Hadir</option>
-                     </select>
+                     <label for="number-seat" class="form-label">Nomor Kursi</label>
+                     <input type="text" class="form-control" id="number-seat" name="number-seat">
                   </div>
                </div>
                <div class="col-12">
@@ -215,27 +264,7 @@
                </div>
             </div>
 
-            <div class="row justify-content-center mt-5">
-               <div class="col-md-6">
-                  <div id="disqus_thread"></div>
-                  <script>
 
-                     var disqus_config = function () {
-                        this.page.url = 'https://achmadfazza.github.io/Undangan-Nikah/';  // Replace PAGE_URL with your page's canonical URL variable
-                        this.page.identifier = 'https://achmadfazza.github.io/Undangan-Nikah/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                     };
-
-                     (function () { // DON'T EDIT BELOW THIS LINE
-                        var d = document, s = d.createElement('script');
-                        s.src = 'https://early-meeting-2024.disqus.com/embed.js';
-                        s.setAttribute('data-timestamp', +new Date());
-                        (d.head || d.body).appendChild(s);
-                     })();
-                  </script>
-                  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments
-                        powered by Disqus.</a></noscript>
-               </div>
-            </div>
          </div>
       </div>
       <!-- rsvp -->
@@ -284,11 +313,11 @@
    <!-- Timer CountDown -->
    <script>
       simplyCountdown('.simply-countdown', {
-         year: 2023, // required
-         month: 11, // required
-         day: 29, // required
-         hours: 10, // Default is 0 [0-23] integer
-         minutes: 59, // Default is 0 [0-59] integer
+         year: 2024, // required
+         month: 1, // required
+         day: 6, // required
+         hours: 7, // Default is 0 [0-23] integer
+         minutes: 30, // Default is 0 [0-59] integer
          seconds: 0, // Default is 0 [0-59] integer
          words: { //words displayed into the countdown
             days: { singular: 'hari', plural: 'hari' },
@@ -326,6 +355,7 @@
 
       // rsvp section
       document.querySelector('#name').value = name;
+      document.querySelector('#number-seat').value = seat;
    </script>
    <!-- Disable Scroll & Play Audio -->
    <script>
@@ -402,7 +432,7 @@
                .then(() => {
                   swal({
                      title: "Berhasil!",
-                     text: "Ditunggu kedatanganya di Early Meeting 2024",
+                     text: "Terimakasih Sudah Melakukan Absensi",
                      icon: "success",
                      button: true
                   });
@@ -422,8 +452,6 @@
          duration: 500,
       });
    </script>
-   <!-- Disquss -->
-   <script id="dsq-count-scr" src="//early-meeting-2024.disqus.com/count.js" async></script>
 </body>
 
 </html>
