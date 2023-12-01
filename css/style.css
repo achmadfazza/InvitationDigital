@@ -199,7 +199,7 @@ body {
 
 .gallery h2 {
    font-family: 'Sacramento', cursive;
-   font-size: 5.5rem;
+   font-size: 4.5rem;
    font-weight: bold;
    color: var(--bg);
    padding-bottom: 1rem;
@@ -244,7 +244,6 @@ body {
 .hidden-div {
    display: none;
 }
-
 
 footer {
    padding: 0.8rem;
@@ -300,7 +299,6 @@ footer li {
    }
 }
 
-/* coba */
 .portfolio-menu {
    text-align: center;
 }
@@ -318,14 +316,10 @@ footer li {
    transition: all .5s ease;
 }
 
-
 .portfolio-item .item {
-   /*width:303px;*/
    float: left;
    margin-bottom: 10px;
 }
-
-/* coba */
 
 /* Media Query */
 /* laptop */
