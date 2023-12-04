@@ -189,7 +189,7 @@ body {
    font-weight: 300;
 }
 
-.gallery {
+.rsvp {
    background-color: wheat;
    background-size: cover;
    min-height: 100vh;
@@ -197,7 +197,7 @@ body {
    padding-bottom: 5rem;
 }
 
-.gallery h2 {
+.rsvp h2 {
    font-family: 'Sacramento', cursive;
    font-size: 4.5rem;
    font-weight: bold;
@@ -205,13 +205,13 @@ body {
    padding-bottom: 1rem;
 }
 
-.gallery p {
+.rsvp p {
    font-family: 'Work Sans', sans-serif;
    font-weight: 400;
    font-size: 1rem;
 }
 
-.gallery button {
+.rsvp button {
    background-color: var(--blue);
    color: white;
    border: 1px solid var(--blue);
@@ -221,13 +221,13 @@ body {
    margin-top: 1.1rem;
 }
 
-.gallery button:hover {
+.rsvp button:hover {
    background-color: var(--navy);
    color: white;
    border: 1px solid var(--navy);
 }
 
-.gallery a {
+.rsvp a {
    text-decoration: none;
    font-size: 2rem;
    font-weight: 600;
