@@ -212,7 +212,8 @@
             </div>
 
             <form id="my-form" class="row row-cols-md-auto g-3 align-items-center justify-content-center my-form mt-3"
-               method="POST" action="">
+               method="POST"
+               action="https://script.google.com/macros/s/AKfycbyeHRuwBMHRUpHgV-EF4d0GL43_nLYWFMonuQbRi2uNKap_N1IomyqtSYDProJoDy4j/exec">
                <div class="col-12">
                   <div class="mb-3">
                      <label for="name" class="form-label">Nama</label>
@@ -277,11 +278,11 @@
    <!-- Timer CountDown -->
    <script>
       simplyCountdown('.simply-countdown', {
-         year: 2024, // required
-         month: 1, // required
-         day: 6, // required
-         hours: 7, // Default is 0 [0-23] integer
-         minutes: 30, // Default is 0 [0-59] integer
+         year: 2023, // required
+         month: 12, // required
+         day: 4, // required
+         hours: 10, // Default is 0 [0-23] integer
+         minutes: 50, // Default is 0 [0-59] integer
          seconds: 0, // Default is 0 [0-59] integer
          words: { //words displayed into the countdown
             days: { singular: 'hari', plural: 'hari' },
@@ -389,6 +390,7 @@
             e.preventDefault();
             const data = new FormData(form);
             const action = e.target.action;
+            console.log(data);
             fetch(action, {
                method: 'POST',
                body: data,
