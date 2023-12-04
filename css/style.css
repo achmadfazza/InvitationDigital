@@ -189,7 +189,7 @@ body {
    font-weight: 300;
 }
 
-.rsvp {
+.comment {
    background-color: wheat;
    background-size: cover;
    min-height: 100vh;
@@ -197,7 +197,7 @@ body {
    padding-bottom: 5rem;
 }
 
-.rsvp h2 {
+.comment h2 {
    font-family: 'Sacramento', cursive;
    font-size: 4.5rem;
    font-weight: bold;
@@ -205,13 +205,13 @@ body {
    padding-bottom: 1rem;
 }
 
-.rsvp p {
+.comment p {
    font-family: 'Work Sans', sans-serif;
    font-weight: 400;
    font-size: 1rem;
 }
 
-.rsvp button {
+.comment button {
    background-color: var(--blue);
    color: white;
    border: 1px solid var(--blue);
@@ -221,13 +221,13 @@ body {
    margin-top: 1.1rem;
 }
 
-.rsvp button:hover {
+.comment button:hover {
    background-color: var(--navy);
    color: white;
    border: 1px solid var(--navy);
 }
 
-.rsvp a {
+.comment a {
    text-decoration: none;
    font-size: 2rem;
    font-weight: 600;
