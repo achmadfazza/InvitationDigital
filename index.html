@@ -109,7 +109,6 @@
                   width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-
                <a class="btn btn-light btn-sm my-3" href="https://maps.app.goo.gl/KVNV5aeBLNwnnw7z9"
                   target="_blank">klik untuk membuka peta</a>
 
@@ -200,8 +199,9 @@
                      (d.head || d.body).appendChild(s);
                   })();
                </script>
-               <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">
-                     comments powered by Disqus.</a>
+               <noscript>
+                  Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+                     Disqus.</a>
                </noscript>
             </div>
          </div>
@@ -230,7 +230,6 @@
                   <button id="submitBtn" class="btn btn-primary btn-sm">Kirim</button>
                </div>
             </form>
-
          </div>
       </div>
       <!-- rsvp -->
@@ -308,7 +307,6 @@
       // pronoun
       const pronoun = urlParams.get('p') || 'Bapak/Ibu/Saudara/i ';
 
-      // merubah url ke dalam html
       // hero section
       const changeName = document.querySelector('.hero h4 span');
       changeName.innerText = `${pronoun} ${name},`.replace(/,$/, ',');
@@ -319,7 +317,7 @@
       const changeInfoSeat = document.querySelector('.myInfoSeat p span');
       changeInfoSeat.innerText = `${seat}`;
 
-      // rsvp section
+      // comment section
       document.querySelector('#name').value = name;
       document.querySelector('#number-seat').value = seat;
    </script>
