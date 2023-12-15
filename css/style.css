@@ -138,9 +138,9 @@ body {
    font-family: 'Lora', cursive;
    font-size: 3rem;
    font-weight: bold;
-   font-style: italic;
-   letter-spacing: 1px;
-   margin-top: 3rem;
+   letter-spacing: 0.5px;
+   margin-top: 2rem;
+   -webkit-text-stroke: 1px white;
 }
 
 .home h3 {
