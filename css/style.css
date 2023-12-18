@@ -3,7 +3,7 @@
    --bg: #000000;
    --shadow: 0 2px 2px rgba(0 0 0 / 0.5);
    --navy: #0C356A;
-   --blue: #0174BE;
+   --blue: #87C4FF;
    --yellow: #FFC436;
    --wedding: #FFF0CE;
 }
@@ -38,9 +38,10 @@ body {
    left: 0;
    width: 100%;
    height: 100%;
-   background-image: url('../img/bg-home.jpeg');
+   background-image: url('../img/bg-image.jpeg');
    z-index: -1;
    background-size: cover;
+   background-position: center;
 }
 
 .hero {
@@ -117,26 +118,29 @@ body {
 .home {
    background-image: url('../img/bg-leaves.png');
    background-size: cover;
-   padding-top: 7rem;
-   padding-bottom: 8rem;
    min-height: 100vh;
+}
+
+.home .container {
+   padding-top: 5rem;
+   padding-bottom: 5rem;
 }
 
 .home h1 {
    font-family: 'JavaCali', cursive;
    font-weight: 600;
    padding-bottom: 1.5rem;
-   color: var(--pink);
+   color: var(--navy);
 }
 
 .home h2 {
    color: var(--bg);
-   font-family: 'Sacramento', cursive;
-   font-size: 4rem;
+   font-family: 'Lora', cursive;
+   font-size: 3rem;
    font-weight: bold;
-   font-style: italic;
-   letter-spacing: 1px;
-   margin-top: 3rem;
+   letter-spacing: 0.5px;
+   margin-top: 2rem;
+   -webkit-text-stroke: 1px white;
 }
 
 .home h3 {
@@ -255,7 +259,7 @@ body {
 
 footer {
    padding: 0.8rem;
-   background-color: var(--blue);
+   background-color: var(--navy);
    color: white;
 }
 
@@ -349,8 +353,8 @@ footer li {
       font-weight: 400;
    }
 
-   .home {
-      padding-top: 10rem;
+   .home .container {
+      padding-top: 13rem;
    }
 
    .simply-countdown>.simply-section {
@@ -364,10 +368,11 @@ footer li {
 
    .hero h1 {
       font-size: 3rem;
+      margin-top: 4rem;
    }
 
    .home p {
-      margin-top: 2rem;
+      margin-top: 4rem;
    }
 
    .home h2 {

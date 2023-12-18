@@ -83,11 +83,11 @@
          <div class="row justify-content-center">
             <div class="col-sm-8 col-md-10 text-center" data-aos="fade-up">
                <h1>Early Meeting 2024</h1>
-               <h2>"Synergize together to achieve digital transformation: <span>Innovation,Efficiency and
+               <h2>"Synergize Together to Achieve Digital Transformation: <span>Innovation,Efficiency and
                      Productivity"</span>
                </h2>
-               <p>Oleh karena itu, dengan segala hormat, kami bermaksud mengundang Bapak/Ibu,Saudara/i, untuk hadir pada
-                  acara early meeting 2024 yang akan berlangsung pada : </p>
+               <p>Dengan segala hormat, kami bermaksud mengundang Bapak/Ibu,Saudara/i, untuk hadir pada
+                  acara Early Meeting 2024 yang akan berlangsung pada : </p>
             </div>
          </div>
          <div class="row text-center mt-3" data-aos="fade-down">
@@ -287,9 +287,9 @@
    <!-- Timer CountDown -->
    <script>
       simplyCountdown('.simply-countdown', {
-         year: 2024, // required
-         month: 1, // required
-         day: 6, // required
+         year: 2023, // required
+         month: 12, // required
+         day: 13, // required
          hours: 7, // Default is 0 [0-23] integer
          minutes: 30, // Default is 0 [0-59] integer
          seconds: 0, // Default is 0 [0-59] integer
@@ -391,6 +391,14 @@
          const submitBtn = document.querySelector('#submitBtn');
          submitBtn.disabled = true;
       }
+
+      $('.btn').on('click', function () {
+         var $this = $(this);
+         $this.button('loading');
+         setTimeout(function () {
+            $this.button('reset');
+         }, 3000);
+      });
 
       window.addEventListener("load", function () {
          const form = document.getElementById('my-form');
