@@ -389,10 +389,8 @@
    </script>
    <!-- Btn Logic -->
    <script>
-      function disableButton() {
-         const submitBtn = document.querySelector('#submitBtn');
-         submitBtn.disabled = true;
-      }
+      const submitBtn = document.querySelector('#submitBtn');
+
 
       window.addEventListener("load", function () {
          const form = document.getElementById('my-form');
@@ -400,7 +398,7 @@
             e.preventDefault();
             const data = new FormData(form);
             const action = e.target.action;
-            console.log(data);
+            submitBtn.classList.add("button-loader");
             fetch(action, {
                method: 'POST',
                body: data,
@@ -412,11 +410,14 @@
                      icon: "success",
                      button: true
                   });
-                  // disable after submit button
-                  disableButton();
-                  // reset input
-                  form.reset();
-                  return false;
+                  setTimeout(() => {
+                     // disable after submit button
+                     submitBtn.disabled = true;
+                     submitBtn.classList.remove("button-loader");
+                     // reset input
+                     form.reset();
+                     return false;
+                  }, 2000);
                });
          });
       });
