@@ -235,7 +235,9 @@
                   </div>
                </div>
                <div class="col-12">
-                  <button id="submitBtn" class="btn btn-primary btn-sm">Kirim</button>
+                  <button id="submitBtn" class="btn btn-primary btn-sm">
+                     Kirim
+                  </button>
                </div>
             </form>
          </div>
@@ -391,14 +393,6 @@
          const submitBtn = document.querySelector('#submitBtn');
          submitBtn.disabled = true;
       }
-
-      $('.btn').on('click', function () {
-         var $this = $(this);
-         $this.button('loading');
-         setTimeout(function () {
-            $this.button('reset');
-         }, 3000);
-      });
 
       window.addEventListener("load", function () {
          const form = document.getElementById('my-form');
