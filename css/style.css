@@ -145,14 +145,14 @@ body {
 }
 
 .home h3 {
-   color: #444;
+   color: white;
    font-size: 1.5rem;
    margin-bottom: 1rem;
 }
 
 .home p {
+   color: white;
    font-size: 1.4rem;
-   color: #666;
    margin-top: 1.4rem;
 }
 
@@ -189,7 +189,7 @@ body {
 }
 
 .info .card-header {
-   border-bottom: 1px solid #999;
+   border-bottom: 1px solid white;
    text-transform: uppercase;
    letter-spacing: 0.1rem;
 }
@@ -199,9 +199,9 @@ body {
 }
 
 .info .card-footer {
-   border-top: 1px solid #999;
+   border-top: 1px solid white;
    font-size: 1rem;
-   font-weight: 300;
+   font-weight: 400;
 }
 
 .comment {
@@ -379,6 +379,16 @@ footer li {
       bottom: 7rem;
    }
 
+   .home p {
+      margin-top: 4rem;
+      color: var(--bg);
+   }
+
+   .home h3 {
+      color: var(--bg);
+   }
+
+
 }
 
 /* mobile */
@@ -408,6 +418,11 @@ footer li {
 
    .home p {
       margin-top: 4rem;
+      color: var(--bg);
+   }
+
+   .home h3 {
+      color: var(--bg);
    }
 
    .home h2 {
@@ -416,6 +431,10 @@ footer li {
 
    .info .card {
       margin-top: 1rem;
+   }
+
+   .info .card-footer {
+      font-weight: 300;
    }
 
    .rsvp h2 {
