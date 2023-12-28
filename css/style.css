@@ -119,7 +119,7 @@ body {
    background-image: url('../img/home-img.png');
    min-height: 100vh;
    background-size: cover;
-   background-position: center;
+   background-position: right;
 }
 
 .home .container {
