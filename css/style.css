@@ -123,8 +123,17 @@ body {
 }
 
 .home .container {
-   padding-top: 5rem;
-   padding-bottom: 5rem;
+   padding-top: 6rem;
+   padding-bottom: 6rem;
+   position: relative;
+   content: ' ';
+}
+
+.image-gatot {
+   position: absolute;
+   top: -20px;
+   left: 10px;
+   width: 150px;
 }
 
 .home h1 {
@@ -132,17 +141,17 @@ body {
    font-weight: 400;
    font-size: 2.5rem;
    padding-bottom: 1.5rem;
-   color: var(--wedding);
+   color: var(--bg);
 }
 
 .home h2 {
-   color: var(--bg);
+   color: white;
    font-family: 'Lora', cursive;
    font-size: 3rem;
    font-weight: bold;
    letter-spacing: 0.5px;
    margin-top: 2rem;
-   -webkit-text-stroke: 1px white;
+   -webkit-text-stroke: 0.7px black;
 }
 
 .home h3 {
@@ -184,7 +193,7 @@ body {
 }
 
 .info .card {
-   background-color: rgba(255, 255, 255, 0.2) !important;
+   background-color: rgba(255, 255, 255, 0.3) !important;
    color: white !important;
    border: 1px solid white #999;
 }
@@ -412,9 +421,14 @@ footer li {
       font-size: 1.2rem;
    }
 
+
+   .hero .mainHero {
+      padding-top: 32rem;
+   }
+
    .hero h1 {
       font-size: 3rem;
-      margin-top: 4rem;
+      padding-top: 1rem;
       font-weight: 400;
    }
 
