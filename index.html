@@ -353,15 +353,15 @@
       let isPlaying = false;
 
 
-      function disableScroll() {
-         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-         const scrolTop = window.pageXOffset || document.documentElement.scrollLeft;
-         window.onscroll = function () {
-            window.scrollTo(scrollTop, scrollTop);
-         };
-         //  memaksa agar tidak bisa scroll ke bawah dengan root element;
-         rootElement.style.scrollBehavior = 'auto';
-      }
+      // function disableScroll() {
+      //    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      //    const scrolTop = window.pageXOffset || document.documentElement.scrollLeft;
+      //    window.onscroll = function () {
+      //       window.scrollTo(scrollTop, scrollTop);
+      //    };
+      //    //  memaksa agar tidak bisa scroll ke bawah dengan root element;
+      //    rootElement.style.scrollBehavior = 'auto';
+      // }
 
       audioIconWrapper.onclick = function () {
          if (isPlaying) {
@@ -388,14 +388,14 @@
          window.onscroll = function () { };
          rootElement.style.scrollBehavior = 'smooth';
          // add to local storage
-         localStorage.setItem('opened', 'true');
+         // localStorage.setItem('opened', 'true');
          playAudio();
       }
 
       //jika belum dibuka maka tidak bisa discroll
-      if (!localStorage.getItem('opened')) {
-         disableScroll();
-      }
+      // if (!localStorage.getItem('opened')) {
+      //    disableScroll();
+      // }
 
    </script>
    <!-- Btn Logic -->

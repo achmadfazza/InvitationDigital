@@ -220,8 +220,6 @@ body {
    font-weight: 400;
 }
 
-
-
 .comment {
    background-color: wheat;
    background-size: cover;
@@ -431,7 +429,7 @@ footer li {
 
 
    .hero .mainHero {
-      padding-top: 28rem;
+      padding-top: 20rem;
    }
 
    .hero h1 {
