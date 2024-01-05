@@ -317,7 +317,7 @@ footer li {
    line-height: 0;
    justify-content: center;
    align-items: center;
-   display: none;
+   /* display: none; */
 }
 
 @keyframes rotating {
@@ -460,9 +460,9 @@ footer li {
       color: white !important;
    }
 
-   footer ul {
+   /* footer ul {
       padding-bottom: 3.5rem;
-   }
+   } */
 
    .audio-icon-wrapper {
       bottom: 12rem;
