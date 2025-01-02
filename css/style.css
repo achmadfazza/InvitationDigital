@@ -237,11 +237,11 @@ body {
 }
 
 .comment {
-   background-image: url('../img/Page_4.png');
+   background-image: url('../img/page_4.png');
    background-size: cover;
    background-position: center;
    padding-top: 5rem;
-   padding-bottom: 5rem;
+   padding-bottom: 3rem;
 }
 
 .comment h2 {
