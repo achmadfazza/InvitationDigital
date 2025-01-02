@@ -2,7 +2,7 @@
    --pink: #f14e95;
    --bg: #000000;
    --shadow: 0 2px 2px rgba(0 0 0 / 0.5);
-   --navy: #3887BE;
+   --navy: #F4A32E;
    --blue: #52D3D8;
    --yellow: #FFC436;
    --wedding: #FFF0CE;
@@ -75,6 +75,7 @@ body {
 .hero h4,
 .hero p {
    text-shadow: var(--shadow);
+   color: var(--bg);
 }
 
 .hero h1 {
@@ -102,13 +103,13 @@ body {
 }
 
 .hero a {
-   color: var(--pink);
+   color: var(--yellow);
    background-color: white;
    box-shadow: var(--shadow);
 }
 
 .hero a:hover {
-   background-color: var(--pink);
+   background-color: var(--navy);
    color: white;
 }
 
@@ -191,11 +192,10 @@ body {
 .info {
    background-image: url('../img/page_3.png');
    color: var(--shadow);
-   padding-top: 29rem;
+   padding-top: 10rem;
    padding-bottom: 8rem;
    overflow: hidden;
    background-size: cover;
-   background-position: center;
 }
 
 .info h2 {
@@ -237,9 +237,9 @@ body {
 }
 
 .comment {
-   background-color: wheat;
+   background-image: url('../img/Page_4.png');
    background-size: cover;
-   min-height: 100vh;
+   background-position: center;
    padding-top: 5rem;
    padding-bottom: 5rem;
 }
@@ -480,9 +480,6 @@ footer li {
       font-weight: 400;
    }
 
-   .home {
-      padding-top: 20rem;
-   }
 
    .home p {
       margin-top: 4rem;
@@ -512,15 +509,15 @@ footer li {
       margin-top: 1rem;
    }
 
-   .info .card-footer {
+   /* .info .card-footer {
       color: white !important;
-   }
+   } */
 
    /* footer ul {
       padding-bottom: 3.5rem;
    } */
 
    .audio-icon-wrapper {
-      bottom: 12rem;
+      bottom: 10rem;
    }
 }
