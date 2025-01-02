@@ -241,7 +241,6 @@ body {
    background-size: cover;
    background-position: center;
    padding-top: 5rem;
-   padding-bottom: 3rem;
 }
 
 .comment h2 {
@@ -516,6 +515,11 @@ footer li {
    /* footer ul {
       padding-bottom: 3.5rem;
    } */
+
+   .comment {
+      background-position: center;
+      padding-top: 18rem;
+   }
 
    .audio-icon-wrapper {
       bottom: 10rem;
