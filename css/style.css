@@ -3,7 +3,7 @@
    --bg: #000000;
    --shadow: 0 2px 2px rgba(0 0 0 / 0.5);
    --navy: #F4A32E;
-   --green: #52D3D8;
+   --green: #76BFB8;
    --yellow: #FFC436;
    --wedding: #FFF0CE;
    --red: #ed3237;
@@ -223,18 +223,27 @@ body {
 
 .info .card-header {
    border-bottom: 1px solid white;
+   background-color: var(--green);
    text-transform: uppercase;
    letter-spacing: 0.1rem;
+   color: var(--bg);
 }
 
 .info .card-body {
    font-size: 1.2rem;
 }
 
+.info .my-footer {
+   background-color: var(--green);
+   color: var(--bg);
+}
+
 .info .card-footer {
    border-top: 1px solid white;
    font-size: 1rem;
    font-weight: 400;
+   color: var(--bg);
+
 }
 
 .comment {
