@@ -219,15 +219,15 @@
                      powered by Disqus.</a></noscript>
             </div>
          </div>
-         <div id="myDiv" class="row justify-content-center hidden-div mt-5">
+         <div id="myDiv" class="row justify-content-center hidden-div pb-5 pt-5">
             <div class="col-md-8 col-10 text-center">
                <h2>Form Absensi</h2>
                <p>Klik tombol kirim (1x) melakukan konfirmasi kehadiran</p>
             </div>
 
-            <form id="my-form" class="row row-cols-md-auto g-3 align-items-center justify-content-center my-form mt-3"
+            <form id="my-form" class="row row-cols-md-auto g-3 align-items-center justify-content-center mt-3"
                method="POST"
-               action="https://script.google.com/macros/s/AKfycbyeHRuwBMHRUpHgV-EF4d0GL43_nLYWFMonuQbRi2uNKap_N1IomyqtSYDProJoDy4j/exec">
+               action="https://script.google.com/macros/s/AKfycbxx5CzToY5TqA7gVnRNXJv7lGjspy5g9bjUMOKbr4fesBDLO42IZxxCySBkXQaMbcIHXw/exec">
                <div class="col-12">
                   <div class="mb-3">
                      <label for="name" class="form-label">Nama</label>
@@ -241,7 +241,7 @@
                   </div>
                </div>
                <div class="col-12">
-                  <button id="submitBtn" class="btn btn-primary btn-sm">
+                  <button id="submitBtn" class="btn btn-sm">
                      Kirim
                   </button>
                </div>
@@ -395,7 +395,6 @@
    <!-- Btn Logic -->
    <script>
       const submitBtn = document.querySelector('#submitBtn');
-
 
       window.addEventListener("load", function () {
          const form = document.getElementById('my-form');
