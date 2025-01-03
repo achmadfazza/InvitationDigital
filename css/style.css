@@ -3,9 +3,10 @@
    --bg: #000000;
    --shadow: 0 2px 2px rgba(0 0 0 / 0.5);
    --navy: #F4A32E;
-   --blue: #52D3D8;
+   --green: #52D3D8;
    --yellow: #FFC436;
    --wedding: #FFF0CE;
+   --red: #ed3237;
 }
 
 /* fonts */
@@ -179,7 +180,7 @@ body {
    color: white;
    font-size: 1.5rem;
    margin-bottom: 1rem;
-   background-color: rgba(0, 0, 0, .5);
+   background-color: var(--red);
    padding: 0.8rem;
 }
 
@@ -215,9 +216,9 @@ body {
 }
 
 .info .card {
-   background-color: rgba(255, 255, 255, 0.1) !important;
+   background-color: rgba(255, 255, 255, 0.5) !important;
    color: var(--shadow) !important;
-   border: 1px solid white #999;
+   border: 4px solid white #999;
 }
 
 .info .card-header {
